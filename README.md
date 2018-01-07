@@ -11,12 +11,21 @@ the Kernal module of the operating system to the hacker with the consent or know
 The Intel Processor core instruction sequence of Meltdown: -
 
 ; rcx = kernel address
+
  ; rbx = probe array
- retry:
- mov al, byte [rcx]
- shl rax, 0xc
- jz retry
- mov rbx, qword [rbx + rax]
+
+retry:
+
+mov al, byte [rcx]
+
+shl rax, 0xc
+
+jz retry
+
+mov rbx, qword [rbx + rax]
+
+
+
 
 Meltdown breaks the most fundamental isolation between user applications and the operating system. 
 This attack allows a program to access the memory, and thus also the secrets, of other programs and the 
