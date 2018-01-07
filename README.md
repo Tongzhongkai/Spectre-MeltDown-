@@ -47,7 +47,7 @@ Can only dump `linux_proc_banner` at the moment, since requires accessed memory
 to be in cache and `linux_proc_banner` is cached on every read from
 `/proc/version`. Might work with `prefetch`.
 
-https://github.com/Anakin-Skywalker/Spectre-MeltDown-/Build with `make`, run with `./run.sh`.
+Build with `make`, run with `./run.sh`.
 
 Can't defeat KASLR yet, so you may need to enter your password to find
 `linux_proc_banner` in the `/proc/kallsyms` (or do it manually).
