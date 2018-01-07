@@ -1,5 +1,6 @@
 /*
-Spectre Meltdown Source 
+Spectre / Meltdown Source cODE :) 
+hAPPY hACKiNG
 */
 
 #include <stdio.h>
