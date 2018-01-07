@@ -1,5 +1,8 @@
 INTEL PROCESSOR SPECTRE EXPLOIT SOURCE CODE -  Spectre-Meltdown.c
 
+Build with: cc Spectre-Meldown.c  and run with ./output.o
+
+
 Spectre breaks the isolation between different applications. It allows an attacker to trick error-free programs, which follow best practices, into leaking their secrets. In fact, the safety checks of said best practices actually increase the attack surface and may make applications more susceptible to Spectre
 
 Spectre is slightly different from Meltdown. This is so because it can allow hackers to fool the applications (even the stable versions of the respective application) running on a machine to give up secret information from the Kernal module of the operating system to the hacker with the consent or knowledge of the user.
@@ -44,7 +47,7 @@ Can only dump `linux_proc_banner` at the moment, since requires accessed memory
 to be in cache and `linux_proc_banner` is cached on every read from
 `/proc/version`. Might work with `prefetch`.
 
-Build with `make`, run with `./run.sh`.
+https://github.com/Anakin-Skywalker/Spectre-MeltDown-/Build with `make`, run with `./run.sh`.
 
 Can't defeat KASLR yet, so you may need to enter your password to find
 `linux_proc_banner` in the `/proc/kallsyms` (or do it manually).
