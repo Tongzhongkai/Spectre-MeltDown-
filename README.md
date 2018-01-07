@@ -47,6 +47,12 @@ Can only dump `linux_proc_banner` at the moment, since requires accessed memory
 to be in cache and `linux_proc_banner` is cached on every read from
 `/proc/version`. Might work with `prefetch`.
 
+
+Because your system may be preventing the program from reading kernel symbols in /proc/kallsyms due to /proc/sys/kernel/kptr_restrict set to 1. The following command will do the tricky:
+
+sudo sh -c "echo 0 > /proc/sys/kernel/kptr_restrict"
+
+
 Build with `make`, run with `./run.sh`.
 
 Can't defeat KASLR yet, so you may need to enter your password to find
