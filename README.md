@@ -1,4 +1,4 @@
-iNTEL PROCESSOR SPECTRE MELTDOWN EXPLOIT SOURCE CODE
+INTEL PROCESSOR SPECTRE MELTDOWN EXPLOIT SOURCE CODE
 
 Spectre breaks the isolation between different applications. It allows an attacker to trick error-free programs, which follow best practices, into leaking their secrets. In fact, the safety checks of said best practices actually increase the attack surface and may make applications more susceptible to Spectre
 
