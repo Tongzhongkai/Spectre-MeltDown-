@@ -43,9 +43,6 @@ traces in microarchitecture such as cache.
 
 Refer to the paper by Lipp et. al 2017 for details: https://meltdownattack.com/meltdown.pdf.
 
-Ref. Breaking kernel Address Space Layout Randomization	with Intel TSX:
-https://www.blackhat.com/docs/us-16/materials/us-16-Jang-Breaking-Kernel-Address-Space-Layout-Randomization-KASLR-With-Intel-TSX.pdf
-
 Can only dump `linux_proc_banner` at the moment, since requires accessed memory
 to be in cache and `linux_proc_banner` is cached on every read from
 `/proc/version`. Might work with `prefetch`.
@@ -57,6 +54,9 @@ sudo sh -c "echo 0 > /proc/sys/kernel/kptr_restrict"
 
 
 Build with `make`, run with `./run.sh`.
+
+Ref. Breaking kernel Address Space Layout Randomization	with Intel TSX:
+https://www.blackhat.com/docs/us-16/materials/us-16-Jang-Breaking-Kernel-Address-Space-Layout-Randomization-KASLR-With-Intel-TSX.pdf
 
 Can't defeat KASLR yet, so you may need to enter your password to find
 `linux_proc_banner` in the `/proc/kallsyms` (or do it manually).
