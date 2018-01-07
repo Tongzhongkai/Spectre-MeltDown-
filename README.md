@@ -58,6 +58,9 @@ Build with `make`, run with `./run.sh`.
 Ref. Breaking kernel Address Space Layout Randomization	with Intel TSX:
 https://www.blackhat.com/docs/us-16/materials/us-16-Jang-Breaking-Kernel-Address-Space-Layout-Randomization-KASLR-With-Intel-TSX.pdf
 
+Ref. Differences between ASLR, KASLR and KARL:
+http://www.daniloaz.com/en/differences-between-aslr-kaslr-and-karl/
+
 Can't defeat KASLR yet, so you may need to enter your password to find
 `linux_proc_banner` in the `/proc/kallsyms` (or do it manually).
 
