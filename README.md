@@ -1,6 +1,6 @@
 INTEL PROCESSOR SPECTRE EXPLOIT SOURCE CODE -  Spectre-Meltdown.c
 
-Build with: cc Spectre-Meldown.c  and run with ./output.o
+Build with: cc Spectre-Meltdown.c  and run with ./output.o
 
 
 Spectre breaks the isolation between different applications. It allows an attacker to trick error-free programs, which follow best practices, into leaking their secrets. In fact, the safety checks of said best practices actually increase the attack surface and may make applications more susceptible to Spectre
