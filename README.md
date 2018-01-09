@@ -1,5 +1,7 @@
 (Proof of concept - FOR EDUCATIONAL AND SELF TEST PURPOSES ONLY)
 
+Revision 0.1 
+
 INTEL PROCESSOR SPECTRE EXPLOIT SOURCE CODE -  Spectre-Meltdown.c
 
 Build with: cc Spectre-Meltdown.c  and run with ./output.o
